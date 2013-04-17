@@ -1,4 +1,9 @@
 PropertySearch::Application.routes.draw do
+  root to: 'property_search#index'
+
+  get 'api/property'      => 'properties#index'
+  get 'api/property/:id'  => 'properties#show'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
