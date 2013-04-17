@@ -1,4 +1,4 @@
-class PropertiesController < ApplicationController
+class PropertyController < ApplicationController
   respond_to :json
 
   def index
