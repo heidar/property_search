@@ -4,6 +4,7 @@ gem 'rails', '3.2.13'
 
 gem 'foreman'
 gem 'thin'
+gem 'geocoder'
 
 group :assets do
   gem 'haml'
