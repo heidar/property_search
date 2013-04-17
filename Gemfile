@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 
 gem 'foreman'
-gem 'jquery-rails'
 gem 'thin'
 
 group :assets do
@@ -12,6 +11,7 @@ group :assets do
   gem 'coffee-rails'
   gem 'therubyracer', platforms: :ruby
   gem 'uglifier'
+  gem 'angularjs-rails'
 end
 
 group :production do
@@ -25,6 +25,7 @@ end
 
 group :development do
   gem 'better_errors'
+  gem 'awesome_print'
 end
 
 group :test do
