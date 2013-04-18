@@ -2,10 +2,11 @@ class PropertyController < ApplicationController
   respond_to :json
 
   def index
-    respond_with Property.all
+    properties = Property.filter_by_params params
+    respond_with properties
   end
 
   def show
-    respond_with Property.find(params[:id])
+    respond_with Property.find params[:id]
   end
 end

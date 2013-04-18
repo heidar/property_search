@@ -5,6 +5,7 @@ gem 'rails', '3.2.13'
 gem 'foreman'
 gem 'thin'
 gem 'geocoder'
+gem 'squeel'
 
 group :assets do
   gem 'haml'
@@ -26,7 +27,6 @@ end
 
 group :development do
   gem 'better_errors'
-  gem 'awesome_print'
 end
 
 group :test do
