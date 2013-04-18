@@ -12,6 +12,6 @@ class Property < ActiveRecord::Base
       scoped = scoped.where{bedroom_count.gteq params[:bedroom_count]}
     end
 
-    products = scoped.all
+    scoped.all
   end
 end
