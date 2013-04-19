@@ -2,7 +2,7 @@ PropertySearch::Application.routes.draw do
   root to: 'property_search#index'
   
   # namespace :api do
-    resources :property, only: [:index, :show], :path => "/api/property"
+    resources :property, only: [:index], :path => "/api/property"
   # end
 
   # get 'api/property'      => 'properties#index'
