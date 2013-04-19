@@ -5,8 +5,4 @@ class PropertyController < ApplicationController
     properties = Property.filter_by_params params
     respond_with properties
   end
-
-  def show
-    respond_with Property.find params[:id]
-  end
 end

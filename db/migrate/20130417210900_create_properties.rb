@@ -5,6 +5,7 @@ class CreateProperties < ActiveRecord::Migration
       t.integer :bedroom_count
       t.float :latitude
       t.float :longitude
+      t.string :address
 
       t.timestamps
     end
