@@ -12,14 +12,14 @@ class Property < ActiveRecord::Base
 
     if params[:bedroom_count].present?
       scoped = scoped.where{bedroom_count.gteq params[:bedroom_count]}
-      # TODO order by bedroom_count
+      scoped = scoped.order{bedroom_count}
     end
 
     if params[:similar].present?
-      scoped = self.scoped.where{id.eq params[:similar]}
-      property = scoped.first
+      property = self.find(params[:similar])
       properties = property.nearbys(20)
-      return properties.where{bedroom_count.gteq property.bedroom_count}
+      properties = properties.where{bedroom_count.gteq property.bedroom_count}
+      return properties
     end
 
     scoped.all
