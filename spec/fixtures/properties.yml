@@ -1,0 +1,17 @@
+one:
+  name: 'Property 1'
+  bedroom_count: 1
+  latitude: 51.501000
+  longitude: -0.142000
+
+two:
+  name: 'Property 2'
+  bedroom_count: 2
+  latitude: 51.523778
+  longitude: -0.205500
+
+three:
+  name: 'Property 3'
+  bedroom_count: 3
+  latitude: 52.644365
+  longitude: 1.31381
