@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 
-gem 'foreman'
-gem 'thin'
 gem 'geocoder'
 gem 'squeel'
+gem 'foreman'
+gem 'thin'
 
 group :assets do
   gem 'haml'
@@ -13,7 +13,6 @@ group :assets do
   gem 'coffee-rails'
   gem 'therubyracer', platforms: :ruby
   gem 'uglifier'
-  gem 'angularjs-rails'
 end
 
 group :production do
@@ -31,7 +30,5 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'guard-rspec'
-  gem 'rb-inotify'
-  gem 'zeus'
+  gem 'spork-rails'
 end
