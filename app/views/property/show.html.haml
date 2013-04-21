@@ -1,0 +1,10 @@
+%h2= @property.name
+%p= @property.address
+%p Bedrooms: #{@property.bedroom_count}
+
+%h2 Similar properties
+- @properties.each do |property|
+  %p= property.name
+  %p= property.address
+  %p Bedrooms: #{property.bedroom_count}
+  = link_to "Details", @property
