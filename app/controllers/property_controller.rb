@@ -5,7 +5,7 @@ class PropertyController < ApplicationController
     @properties = Property.filter_by_params params
     respond_to do |format|
       format.html
-      format.json { render :json => @properties }
+      format.json { render json: @properties }
     end
   end
 
@@ -17,7 +17,7 @@ class PropertyController < ApplicationController
     @properties = Property.filter_by_params similar
     respond_to do |format|
       format.html
-      format.json { render :json => @properties }
+      format.json { render json: @property }
     end
   end
 end

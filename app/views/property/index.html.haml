@@ -1,5 +1,11 @@
-- @properties.each do |property|
-  %p= property.name
-  %p= property.address
-  %p Bedrooms: #{property.bedroom_count}
-  = link_to "Details", @property
+.row
+  .span3
+    / Start of shared/search_form
+    = render partial: "shared/search_form"
+    / End of shared/search_form
+  .span9
+    - @properties.each do |property|
+      %p= property.name
+      %p= property.address
+      %p Bedrooms: #{property.bedroom_count}
+      = link_to "Details", @property

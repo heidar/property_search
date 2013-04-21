@@ -8,12 +8,6 @@
     = csrf_meta_tags
   %body
     .container
-      .row
-        .span3
-          / Start of shared/search_form
-          = render partial: "shared/search_form"
-          / End of shared/search_form
-        .span9
-          / Start of yield
-          = yield
-          / End of yield
+      / Start of yield
+      = yield
+      / End of yield
