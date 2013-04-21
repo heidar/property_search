@@ -1,6 +1,6 @@
 PropertySearch::Application.routes.draw do
   root to: 'property#index'
-  resources :property, only: [:index, :show], :path => "/property"
+  resources :property, only: [:index, :show]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
