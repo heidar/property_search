@@ -6,6 +6,7 @@ gem 'geocoder'
 gem 'squeel'
 gem 'foreman'
 gem 'thin'
+gem 'jquery-rails'
 
 group :assets do
   gem 'haml'
