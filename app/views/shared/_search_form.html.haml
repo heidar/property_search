@@ -1,0 +1,12 @@
+%form
+  %fieldset
+    %legend Property Search
+    %label Property name
+    %input{type: 'text', placeholder: 'Example: London flat', name: 'name'}
+    %select{name: 'bedroom_count'}
+      %option{value: 1} 1 Bedroom
+      %option{value: 2} 2 Bedrooms
+      %option{value: 3} 3 Bedrooms
+      %option{value: 4} 4 Bedrooms
+      %option{value: 5} 5 Bedrooms
+    %button{class: 'btn btn-primary', type: 'submit'} Search

@@ -1,2 +1,3 @@
-%h1 Property Search
-%p Find me in app/views/property_search/index.html.haml
+- @properties.each do |property|
+  %p
+    = p property.name
