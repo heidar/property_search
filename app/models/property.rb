@@ -12,7 +12,7 @@ class Property < ActiveRecord::Base
       properties = properties.where{bedroom_count.gteq property.bedroom_count}
       return properties
     end
-    
+
     if params[:name].present?
       scoped = scoped.where{name.matches "%#{params[:name]}%"}
     end
