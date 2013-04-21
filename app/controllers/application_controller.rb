@@ -4,9 +4,8 @@ class ApplicationController < ActionController::Base
 
   def not_found
     respond_to do |format|
-      format.html { render file: 'public/404.html' }
-      format.json { render json: { error: "Not found" }.to_json,
-        :status => 404 }
+      format.html { render file: 'public/404.html', status: 404 }
+      format.json { render json: { error: "Not found" }.to_json, status: 404 }
     end
   end
 end
