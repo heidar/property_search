@@ -31,4 +31,5 @@ end
 group :test do
   gem 'capybara'
   gem 'spork-rails'
+  gem 'database_cleaner'
 end
