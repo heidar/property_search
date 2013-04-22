@@ -7,6 +7,7 @@ gem 'squeel'
 gem 'foreman'
 gem 'thin'
 gem 'jquery-rails'
+gem 'turbolinks'
 
 group :assets do
   gem 'haml'
