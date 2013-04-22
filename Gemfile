@@ -9,6 +9,7 @@ gem 'thin'
 gem 'turbolinks'
 gem 'haml'
 gem 'sass-rails'
+gem 'therubyracer', :platforms => :ruby
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 
