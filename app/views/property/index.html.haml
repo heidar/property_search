@@ -1,5 +1,6 @@
 .span9
+  %h2 Property Listing
+  - if @properties.length == 0
+    %h4 No results
   - @properties.each do |property|
-    / Start of shared/property_details
-    = render 'shared/property_details', property: property
-    / End of shared/property_details
+    = render 'property/property_details', property: property
