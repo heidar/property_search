@@ -2,6 +2,8 @@
 
 A simple Rails application which can search and list similar properties.
 
+Live on [Heroku](http://heidar-property-search.herokuapp.com/)
+
 ## Features
 
 ### Search
