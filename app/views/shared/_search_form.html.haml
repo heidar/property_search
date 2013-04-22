@@ -1,11 +1,8 @@
-%form
+= form_tag root_path, method: 'get' do
   %fieldset
     %legend Search
-    %input{type: 'text', placeholder: 'Example: London flat', name: 'name'}
-    %select{name: 'bedroom_count'}
-      %option{value: 1} 1 Bedroom
-      %option{value: 2} 2 Bedrooms
-      %option{value: 3} 3 Bedrooms
-      %option{value: 4} 4 Bedrooms
-      %option{value: 5} 5 Bedrooms
+    = text_field_tag 'name', params[:name], placeholder: 'Example: London flat'
+    - options = options_for_select(1..5, params[:bedroom_count])
+    = label_tag 'Bedrooms'
+    = select_tag 'bedroom_count', options, include_blank: true
     %button{class: 'btn btn-primary', type: 'submit'} Search
