@@ -12,6 +12,7 @@ gem 'sass-rails'
 gem 'bootstrap-sass'
 
 group :assets do
+  gem 'jquery-rails'
   gem 'uglifier'
 end
 
