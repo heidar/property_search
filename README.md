@@ -7,7 +7,8 @@ Live on [Heroku](http://heidar-property-search.herokuapp.com/)
 ## Features
 
 ### Search
-It is possible to search by name and number of bedrooms (bedroom_count). When searching by bedrooms the results are ordered by bedrooms.
+It is possible to search by name and number of bedrooms (bedroom_count). When 
+earching by bedrooms the results are ordered by bedrooms.
 
 ### Similar Properties
 The definition of similar properties is within 20km and greater or equal amount
@@ -27,3 +28,12 @@ Migrate and seed the database
 Then start with foreman
 
     foreman start
+
+## Tests
+Prepare the test database
+
+    rake db:test:prepare
+
+Run rspec
+
+    rspec spec
