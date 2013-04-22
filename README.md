@@ -17,6 +17,25 @@ The definition of similar properties is within 20km and greater or equal amount
 of bedrooms. When searching by similar properties the results are ordered by
 distance.
 
+### REST API
+
+#### GET /property.json (index)
+Returns a JSON encoded list of properties. Supported query parameters are name,
+bedroom_count and similar. Get all properties with 'flat' in their name:
+
+    GET /property.json?name=flat
+    
+Get all properties with 2 or more bedrooms and order by bedrooms.
+
+    GET /property.json?bedroom_count=2
+    
+Get all properties that are similar to property with id 1. Similar is defined above.
+
+    GET /property.json?similar=1
+    
+#### GET /property/1.json (show)
+Returns a single JSON encoded property with the given ID.
+
 ## Setup
 Once you have a copy of the repository, run bundle install
 
