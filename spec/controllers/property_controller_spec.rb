@@ -40,7 +40,7 @@ describe PropertyController do
       JSON.parse(response.body).should be_instance_of(Array)
     end
 
-    it 'returns 3 properties' do
+    it 'returns 4 properties' do
       get :index, format: :json
       JSON.parse(response.body).length.should eq(4)
     end

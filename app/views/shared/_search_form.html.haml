@@ -6,4 +6,4 @@
     - options = options_for_select(1..5, params[:bedroom_count])
     = label_tag 'Bedrooms'
     = select_tag 'bedroom_count', options, include_blank: true
-    %button{class: 'btn btn-primary', type: 'submit'} Search
+    %button#search{class: 'btn btn-primary', type: 'submit'} Search
