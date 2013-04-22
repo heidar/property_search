@@ -1,6 +1,7 @@
 = form_tag root_path, method: 'get' do
   %fieldset
     %legend Search
+    = label_tag 'Name'
     = text_field_tag 'name', params[:name], placeholder: 'Example: London flat'
     - options = options_for_select(1..5, params[:bedroom_count])
     = label_tag 'Bedrooms'
