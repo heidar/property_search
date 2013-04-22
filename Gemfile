@@ -6,14 +6,11 @@ gem 'geocoder'
 gem 'squeel'
 gem 'foreman'
 gem 'thin'
-gem 'jquery-rails'
 gem 'turbolinks'
 
 group :assets do
   gem 'haml'
   gem 'sass-rails'
-  gem 'coffee-rails'
-  gem 'therubyracer', platforms: :ruby
   gem 'uglifier'
   gem 'bootstrap-sass'
 end
