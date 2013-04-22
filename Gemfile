@@ -8,9 +8,9 @@ gem 'foreman'
 gem 'thin'
 gem 'turbolinks'
 gem 'haml'
+gem 'sass-rails'
 
 group :assets do
-  gem 'sass-rails'
   gem 'uglifier'
   gem 'bootstrap-sass'
 end
