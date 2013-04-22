@@ -7,9 +7,9 @@ gem 'squeel'
 gem 'foreman'
 gem 'thin'
 gem 'turbolinks'
+gem 'haml'
 
 group :assets do
-  gem 'haml'
   gem 'sass-rails'
   gem 'uglifier'
   gem 'bootstrap-sass'
