@@ -9,10 +9,10 @@ gem 'thin'
 gem 'turbolinks'
 gem 'haml'
 gem 'sass-rails'
+gem 'bootstrap-sass'
 
 group :assets do
   gem 'uglifier'
-  gem 'bootstrap-sass'
 end
 
 group :production do
