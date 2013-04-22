@@ -1,12 +1,10 @@
-.row
-  .span9
-    %h2= @property.name
-    %p= @property.address
-    %p Bedrooms: #{@property.bedroom_count}
-
-    %h2 Similar properties
-    - @properties.each do |property|
-      %p= property.name
-      %p= property.address
-      %p Bedrooms: #{property.bedroom_count}
-      = link_to "Details", @property
+.span9
+  %h2 Property Details
+  / Start of shared/property_details
+  = render 'shared/property_details', property: @property
+  / End of shared/property_details
+  %h2 Similar Properties
+  - @properties.each do |property|
+    / Start of shared/property_details
+    = render 'shared/property_details', property: property
+    / End of shared/property_details

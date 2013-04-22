@@ -1,9 +1,5 @@
-.row
-  .span3
-    / Start of shared/search_form
-    = render partial: 'shared/search_form'
-    / End of shared/search_form
-  .span9
+.span9
+  - @properties.each do |property|
     / Start of shared/property_details
-    = render partial: 'shared/property_details', properties: @properties
+    = render 'shared/property_details', property: property
     / End of shared/property_details
