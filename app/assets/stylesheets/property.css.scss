@@ -9,9 +9,9 @@
 }
 
 .property-details {
-  margin-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
   img {
     display: inline;
     float: left;
@@ -24,5 +24,8 @@
   a.btn {
     float: right;
     width: 100px;
+  }
+  .map {
+    margin-left: 20px;
   }
 }
