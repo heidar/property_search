@@ -58,3 +58,6 @@ Prepare the test database
 Run rspec
 
     rspec spec
+
+## TODO
+Tests need improvement. Needs to use a factory or mocks and separate controller and model specs. Feature specs could also do with refactoring.
